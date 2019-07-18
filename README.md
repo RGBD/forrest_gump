@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Setup
 
-Things you may want to cover:
+Nothing special, database.yml.sample included
 
-* Ruby version
+### Run
 
-* System dependencies
+Nothing special either
 
-* Configuration
+```
+rake db:setup
+rails s
+```
 
-* Database creation
+### Test
 
-* Database initialization
+Make sure you have webdriver installed (Chrome or Firefox, I used firefox).
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rake spec
+```
