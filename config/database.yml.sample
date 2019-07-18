@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: forrest_gump_development
+
+test:
+  <<: *default
+  database: forrest_gump_test
+
+production:
+  <<: *default
+  database: forrest_gump_production
+  username: forrest_gump
+  password: <%= ENV['FORREST_GUMP_DATABASE_PASSWORD'] %>

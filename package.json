@@ -1,0 +1,11 @@
+{
+  "name": "forrest_gump",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^4.0.7",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.7.2"
+  }
+}
